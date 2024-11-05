@@ -5,6 +5,7 @@
     <classes>
       <class name="testpackg.SearchboxTest">
         <methods>
+          <include name="Test2hotel"/>
           <include name="browserclose"/>
           <include name="setup"/>
           <include name="beftest"/>

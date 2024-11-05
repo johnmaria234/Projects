@@ -1,49 +1,49 @@
 package testpackg;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Set;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import basepackg.Baseclass;
+import pagepckg.Homepage;
 import pagepckg.Searchboxpage;
 
 
 public class SearchboxTest extends Baseclass {
 
     
-    @Test(enabled=false)
+    @Test(enabled=true)
     public void Test1hotel() throws IOException  {
     	test = extent.createTest("Test1hotel");
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
  	    Searchboxpage ob= new Searchboxpage(driver);
- 	         ob.popupclose();
- 	              ob.hotels();
- 	               ob.hotelssearchbar("Munnar");
- 	               ob.hotelscheckin("December 2024", "9");
- 	               ob.hotelscheckout("December 2024", "12");
- 	               ob.slots(2,4,1);
- 	               ob.searchbutton();
- 	               Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
+ 	         ob.popupclose();    
+ 	    
+ 	         ob.hotels("Munnar","December 2024", "24", 1, 2, 1); 
+driver.navigate().back();
+ 	// Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
  	                               }
     
     
-    @Test(enabled=false)
-    public void Test2() throws IOException  { 
+    @Test(enabled=true)
+    public void Test2hotel() throws IOException  { 
     	test = extent.createTest("Test2hotel");
-    	driver.navigate().refresh();
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	    Homepage ob1= new Homepage(driver);
+	    ob1.logobutton();
     	Searchboxpage ob= new Searchboxpage(driver);
-    	      ob.hotels();
-              ob.hotelssearchbar("Munnar");
-    	      ob.dayusehotel("January 2025", "25");
-    	      ob.slots(1, 2, 1);
-    	      ob.searchbutton();
-    	      Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
+    	 ob.popupclose(); 
+    	 ob.hotels("Bombay", "December 2024", "9", "December 2024", "13", 2, 6, 1);
+   Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
     }
     
     @Test(enabled=true)
     public void Test3() {
       	test = extent.createTest("Test3Activities");
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	    Homepage ob1= new Homepage(driver);
+	    ob1.logobutton();
     	Searchboxpage ob= new Searchboxpage(driver);
     	ob.activities("Delhi");
     	

@@ -15,8 +15,8 @@ public class Homepage {
 
 	WebDriver driver;
 	int countfail=0,countsucess=0;
-	@FindBy(xpath="//*[@id='page-header']/section/div[1]/nav/div[1]")
-	WebElement logohomebutton;
+	
+
 	
 	//PAGE HEADERS
 	@FindBy(xpath="//*[@id='page-header']/section/div[1]/nav/div[2]/div[1]/div/a")
@@ -100,6 +100,12 @@ public class Homepage {
 						}
 					    driver.switchTo().window(parentwindow);     
 				}
+		 }
+			@FindBy(xpath="//*[@id='page-header']/section/div[1]/nav/div[1]")
+			WebElement logohomebutton;
+		 
+		 public void logobutton() {
+			 logohomebutton.click();
 		 }
 	
 }
