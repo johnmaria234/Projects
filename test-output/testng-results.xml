@@ -1,81 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-04T21:25:04 IST" name="Default suite" finished-at="2024-11-04T21:25:18 IST" duration-ms="13418">
+  <suite started-at="2024-11-05T16:22:37 IST" name="Default suite" finished-at="2024-11-05T16:22:55 IST" duration-ms="17959">
     <groups>
     </groups>
-    <test started-at="2024-11-04T21:25:04 IST" name="Default test" finished-at="2024-11-04T21:25:18 IST" duration-ms="13418">
-      <class name="testpackg.Hometest">
-        <test-method is-config="true" signature="beftest()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-04T21:25:04 IST" name="beftest" finished-at="2024-11-04T21:25:06 IST" duration-ms="1724" status="PASS">
+    <test started-at="2024-11-05T16:22:37 IST" name="Default test" finished-at="2024-11-05T16:22:55 IST" duration-ms="17959">
+      <class name="testpackg.SearchboxTest">
+        <test-method is-config="true" signature="beftest()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-05T16:22:37 IST" name="beftest" finished-at="2024-11-05T16:22:39 IST" duration-ms="1787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beftest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-04T21:25:06 IST" name="setup" finished-at="2024-11-04T21:25:15 IST" duration-ms="8953" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-05T16:22:39 IST" name="setup" finished-at="2024-11-05T16:22:47 IST" duration-ms="7851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test2home()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-04T21:25:15 IST" name="test2home" finished-at="2024-11-04T21:25:17 IST" duration-ms="2136" status="PASS">
+        <test-method signature="Test3()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-05T16:22:47 IST" name="Test3" finished-at="2024-11-05T16:22:55 IST" duration-ms="7930" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2home -->
-        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-04T21:25:17 IST" name="browserclose" finished-at="2024-11-04T21:25:17 IST" duration-ms="12" status="FAIL">
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-05T16:22:55 IST" name="browserclose" finished-at="2024-11-05T16:22:55 IST" duration-ms="23" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2home status=SUCCESS method=Hometest.test2home()[pri:0, instance:testpackg.Hometest@2af004b] output={null}]]]>
+                <![CDATA[[TestResult name=Test3 status=SUCCESS method=SearchboxTest.Test3()[pri:0, instance:testpackg.SearchboxTest@248e319b] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.log(com.aventstack.extentreports.Status, String)" because "this.test" is null
-at basepackg.Baseclass.browserclose(Baseclass.java:72)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:792)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:768)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-04T21:25:17 IST" name="teardown" finished-at="2024-11-04T21:25:18 IST" duration-ms="529" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-05T16:22:55 IST" name="teardown" finished-at="2024-11-05T16:22:55 IST" duration-ms="309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testpackg.Hometest -->
+      </class> <!-- testpackg.SearchboxTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
