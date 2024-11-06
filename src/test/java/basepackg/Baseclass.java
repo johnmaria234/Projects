@@ -34,7 +34,7 @@ protected ExtentReports extent;
 @BeforeTest
 public void beftest() { 
 	reporter = new ExtentSparkReporter("./Report1/myreport1.html");	
-	reporter.config().setDocumentTitle("Automation Report");
+	reporter.config().setDocumentTitle("Automation Report:Agoda");
 	reporter.config().setReportName("Funtional Test");
 	reporter.config().setTheme(Theme.DARK);
 	
