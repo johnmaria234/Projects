@@ -9,7 +9,6 @@
           <include name="browserclose"/>
           <include name="setup"/>
           <include name="beftest"/>
-          <include name="Test3"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- testpackg.SearchboxTest -->

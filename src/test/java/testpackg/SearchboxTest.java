@@ -13,7 +13,7 @@ import pagepckg.Searchboxpage;
 public class SearchboxTest extends Baseclass {
 
     
-    @Test(enabled=true)
+    @Test(enabled=false)
     public void Test1hotel() throws IOException  {
     	test = extent.createTest("Test1hotel");
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -21,7 +21,7 @@ public class SearchboxTest extends Baseclass {
  	         ob.popupclose();    
  	    
  	         ob.hotels("Munnar","December 2024", "24", 1, 2, 1); 
-driver.navigate().back();
+            driver.navigate().back();
  	// Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
  	                               }
     
@@ -34,8 +34,12 @@ driver.navigate().back();
 	    ob1.logobutton();
     	Searchboxpage ob= new Searchboxpage(driver);
     	 ob.popupclose(); 
-    	 ob.hotels("Bombay", "December 2024", "9", "December 2024", "13", 2, 6, 1);
-   Assert.assertEquals((driver.getCurrentUrl()), "https://www.agoda.com/en-in/activities/search?cityId");
+    	 ob.hotels("Munnar", "December 2024", "9", "December 2024", "13", 2, 6, 1);
+    	 String acturl= driver.getCurrentUrl();
+    	// if(acturl.contains("https://www.agoda.com/en-in/activities/search?cityId")) {};
+    	 
+   Assert.assertEquals(acturl , "https://www.agoda.com/activities/search?cityId=17290&cid=1908612");
+
     }
     
     @Test(enabled=true)

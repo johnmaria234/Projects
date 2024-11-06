@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -88,6 +89,8 @@ public class Searchboxpage {
 			//*[@id="SearchBoxContainer"]/div[1]/div/div[2]/div/div/div[5]/div/div/ul/li[1]
 			//*[@id="SearchBoxContainer"]/div[1]/div/div[2]/div/div/div[5]/div/div/ul/li[5]
 			//*[@id="textInput"]
+		
+			
 		//HOTELS SEARCHBAR
 		@FindBy(xpath="//*[@id=\"funnel-toggles-container\"]/div[1]")
 		WebElement Overnightstays;
@@ -110,7 +113,14 @@ public class Searchboxpage {
 		WebElement person;
 		@FindBy(xpath="//*[@id=\"FocusTrap\"]/div/div[1]/div[3]/div[2]/button[2]")
 		WebElement children;
+		@FindBy(xpath="//*[@id=\"FocusTrap\"]/div/div[2]/ul/div/li/div/select")
+		WebElement childage;
+		@FindBy(xpath="//*[@id=\"FocusTrap\"]/div/div[2]/div[2]/ul/div/div/div/div/div/div/div[1]/div/div/button/div[1]")
+		WebElement  ageofchild;
+		@FindBy(xpath="//*[@id=\"SearchBoxContainer\"]/div[1]/div/div[2]/div/div/div[6]/div/div")
+		WebElement  agepane;
 		
+
 		public void hotels(String place,String month1,String date1,String month2,String date2,int rn,int pn,int cn) 
 		{WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 			Hotelstab.click(); 
@@ -124,15 +134,26 @@ public class Searchboxpage {
                 datepicker(month1,date1);
                 datepicker(month2,date2);
                	
-        		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0)");
+        		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0)");
+        		wait.until(ExpectedConditions.elementToBeClickable(room));
+        		 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,400)");
         			  while(rn>1) { room.click();rn--; }
         		      while(pn>2) { person.click(); pn--; }	           
         		      wait.until(ExpectedConditions.elementToBeClickable(children));
         		      while(cn>0) { 
         		      children.click(); cn--;}  
-        		       wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
-        		       Noofpersonandrooms.click(); 
-        		       Searchbutton.click();   }
+        		     
+        		      
+        		  //    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", childage);
+        		   //   wait.until(ExpectedConditions.elementToBeClickable(childage));
+        		     //childage.click();
+        		      Select age = new Select(childage);
+        		      age.selectByIndex(5);
+        		       //wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
+        		      // Noofpersonandrooms.click(); 
+        		       Searchbutton.click();  
+        		      
+        		       }
 		
 		public void hotels(String place,String month1,String date1,int rn,int pn,int cn) 
 		{WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
@@ -151,7 +172,11 @@ public class Searchboxpage {
         		      while(pn>2) { person.click(); pn--; }	           
         		      wait.until(ExpectedConditions.elementToBeClickable(children));
         		      while(cn>0) { 
-        		      children.click(); cn--;}  
+        		      children.click(); cn--;} 
+        		      ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 200)");
+        		      ageofchild.click();
+        		      Select age = new Select(childage);
+        		      age.selectByVisibleText("2");
         		       wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
         		       Noofpersonandrooms.click(); 
         		       Searchbutton.click();   }

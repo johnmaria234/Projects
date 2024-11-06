@@ -72,10 +72,10 @@ public class Registrationpage {
 		if(Submitbutton.isEnabled()) { Submitbutton.click(); }
 		else { 
 			if(error1.isDisplayed()) {System.out.println(error1.getText());}
-			if(error2.isDisplayed()) {System.out.println(error2.getText());}
-			if(error3.isDisplayed()) {System.out.println(error3.getText());}
-			if(error4.isDisplayed()) {System.out.println(error4.getText());}
-			if(error5.isDisplayed()) {System.out.println(error5.getText());}
+			else if(error2.isDisplayed()) {System.out.println(error2.getText());}
+			else if(error3.isDisplayed()) {System.out.println(error3.getText());}
+			else if(error4.isDisplayed()) {System.out.println(error4.getText());}
+			else if(error5.isDisplayed()) {System.out.println(error5.getText());}
 			//driver.navigate().refresh();
 		    }
 		
