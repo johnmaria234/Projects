@@ -37,7 +37,8 @@ public class Homepage {
 	WebElement Createaccountbuttonph;
 	@FindBy(xpath="//*[@id='page-header']/section/div[2]/div[2]/div/button")
 	WebElement Cartbuttonpageheader;
-	
+	@FindBy(xpath="//*[@id=\"page-header\"]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button")
+	WebElement hiddenbutton;
 	
 	//SAVE MORE ON APP
 	@FindBy(xpath="//*[@id=\"home-react-root\"]/main/div/div[1]/div/div[1]")
@@ -101,6 +102,14 @@ public class Homepage {
 					    driver.switchTo().window(parentwindow);     
 				}
 		 }
+		 
+		 
+		 public void newtab1() {
+			 
+			 hiddenbutton.click();
+			 
+		 }
+		 
 			@FindBy(xpath="//*[@id='page-header']/section/div[1]/nav/div[1]")
 			WebElement logohomebutton;
 		 

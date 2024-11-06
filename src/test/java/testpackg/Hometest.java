@@ -8,7 +8,7 @@ import pagepckg.Homepage;
 public class Hometest extends Baseclass{
 	
 
-	@Test (enabled= false)
+	@Test (enabled= true)
 	public void test1home() {
 		test = extent.createTest("Test1home");
 		Homepage ob1 =new Homepage(driver);
@@ -20,13 +20,19 @@ public class Hometest extends Baseclass{
 		}
 	@Test 
 	public void test2home() {
-		test = extent.createTest("Test2home");
+	
+		test = extent.createTest("Test2windowhandling");
 		Homepage ob =new Homepage(driver);	
-		//Acceptance Test Driven Development (ATDD)
-	        ob.newtab();
+		//window handle
+		try {
+	        ob.newtab();}
+		catch(Exception e) {
+			ob.newtab1();
+	        ob.newtab();}
+		}
 	        
 	}
 	
 	
 
-}
+

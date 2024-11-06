@@ -117,7 +117,7 @@ public class Searchboxpage {
 		WebElement childage;
 		@FindBy(xpath="//*[@id=\"FocusTrap\"]/div/div[2]/div[2]/ul/div/div/div/div/div/div/div[1]/div/div/button/div[1]")
 		WebElement  ageofchild;
-		@FindBy(xpath="//*[@id=\"SearchBoxContainer\"]/div[1]/div/div[2]/div/div/div[6]/div/div")
+		@FindBy(xpath="//*[@id=\"SearchBoxContainer\"]/div[1]/div/div[2]/div/div/div[5]/div/div")
 		WebElement  agepane;
 		
 
@@ -134,7 +134,7 @@ public class Searchboxpage {
                 datepicker(month1,date1);
                 datepicker(month2,date2);
                	
-        		//((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0)");
+   
         		wait.until(ExpectedConditions.elementToBeClickable(room));
         		 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,400)");
         			  while(rn>1) { room.click();rn--; }
@@ -167,19 +167,22 @@ public class Searchboxpage {
                 act.perform(); 	
                 datepicker(month1,date1);
     
-        		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0)");
-        			  while(rn>1) { room.click();rn--; }
-        		      while(pn>2) { person.click(); pn--; }	           
-        		      wait.until(ExpectedConditions.elementToBeClickable(children));
-        		      while(cn>0) { 
-        		      children.click(); cn--;} 
-        		      ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 200)");
-        		      ageofchild.click();
-        		      Select age = new Select(childage);
-        		      age.selectByVisibleText("2");
-        		       wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
-        		       Noofpersonandrooms.click(); 
-        		       Searchbutton.click();   }
+        		wait.until(ExpectedConditions.elementToBeClickable(room));
+       		 ((JavascriptExecutor) driver).executeScript("window.scrollTo(0,200)");
+       			  while(rn>1) { room.click();rn--; }
+       		      while(pn>2) { person.click(); pn--; }	           
+       		      wait.until(ExpectedConditions.elementToBeClickable(children));
+       		      while(cn>0) { 
+       		      children.click(); cn--;}  
+       		     
+       		   Actions dragger = new Actions(driver);
+       		dragger.moveToElement(agepane).clickAndHold().moveByOffset(0,100).release().perform();
+       		
+       		      Select age = new Select(childage);
+       		      age.selectByIndex(5);
+       		       //wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
+       		      // Noofpersonandrooms.click(); 
+       		       Searchbutton.click();    }
 		
 		
 

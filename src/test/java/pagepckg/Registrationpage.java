@@ -7,8 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Registrationpage {
 	WebDriver driver;	
-	//@FindBy(xpath="//*[@id='page-header']/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span")
-	@FindBy(xpath="/html/body/div[8]/header/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span")
+	//*[@id="page-header"]/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span
+	@FindBy(xpath="//*[@id='page-header']/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span")
+	//@FindBy(xpath="/html/body/div[8]/header/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span")
 	WebElement registerlink;
 	@FindBy(xpath="//*[@id=\"root\"]/div/div")
 	WebElement frame1;

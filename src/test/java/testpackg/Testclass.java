@@ -38,6 +38,7 @@ public class Testclass extends Baseclass {
        @Test (enabled= false)
       	public void test3() {
     	  //LOGIN
+    		test = extent.createTest("LOGIN");
     	   Loginpage l = new Loginpage(driver);  
     	   String xl = "C:\\Users\\Maria-Eldho\\Desktop\\Logn.xlsx";
    		   String sheet = "Sheet1";
@@ -49,18 +50,21 @@ public class Testclass extends Baseclass {
    		    String passw = Excelutils.getCellValue(xl, sheet, i, 1);
    		 
    			//passing parameters
-   		  l.login(maile, passw);}
+   		  l.login(maile, passw);
+   		driver.navigate().refresh(); 
+   		  }
    		                               }
  
-       @Test(enabled= false)
+       @Test(enabled= true)
        public void test4() {
-    	   WebElement registerlink= driver.findElement(By.xpath("/html/body/div[8]/header/section/div[2]/div[1]/div[1]/div[1]/button/div/div/span"));
+    		test = extent.createTest("sample test regis");
+    	   WebElement registerlink= driver.findElement(By.xpath("//header[@id=\"page-header\"]/section/div[2]/div[1]/div[1]/div[1]/button/div/div"));
     		registerlink.click();
     		driver.switchTo().frame(0);
     		
-    		WebElement Firstname= driver.findElement(By.id("firstName"));
+    		WebElement Firstname= driver.findElement(By.xpath("//input[@id='firstName']"));
     		Firstname.click();
-    		WebElement Lastname= driver.findElement(By.xpath("//*[@id='lastName']"));
+    		WebElement Lastname= driver.findElement(By.xpath("//input[@id='lastName']"));
     		Lastname.click();
     	   WebElement error1=  driver.findElement(By.xpath("//*[contains(@class,'sc-cwHptR fpPEBz')]"));
     		//"/html/body/div[1]/div/div/div[2]/div/div[2]/form/div/div[1]/div[2]/span")
