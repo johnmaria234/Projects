@@ -173,16 +173,15 @@ public class Searchboxpage {
        		      while(pn>2) { person.click(); pn--; }	           
        		      wait.until(ExpectedConditions.elementToBeClickable(children));
        		      while(cn>0) { 
-       		      children.click(); cn--;}  
+       		      children.click(); cn--;
+       		      }  
        		     
-       		   Actions dragger = new Actions(driver);
-       		dragger.moveToElement(agepane).clickAndHold().moveByOffset(0,100).release().perform();
-       		
+       		  
+       		   act.moveToElement(childage).perform();
+       		       childage.click();  
        		      Select age = new Select(childage);
        		      age.selectByIndex(5);
-       		       //wait.until(ExpectedConditions.elementToBeClickable(Noofpersonandrooms));
-       		      // Noofpersonandrooms.click(); 
-       		       Searchbutton.click();    }
+        		       Searchbutton.click();    }
 		
 		
 
@@ -257,7 +256,12 @@ public class Searchboxpage {
 	           datepicker(month,date);
 	           
 	     }
-	
+	     
+	     
+	     public void searchresult()
+	     {
+	    	 
+	     }	
 }
 		
 

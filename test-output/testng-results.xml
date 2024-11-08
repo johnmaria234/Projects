@@ -1,81 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-06T20:45:16 IST" name="Default suite" finished-at="2024-11-06T20:46:19 IST" duration-ms="63164">
+  <suite started-at="2024-11-08T17:48:53 IST" name="Default suite" finished-at="2024-11-08T17:49:07 IST" duration-ms="13965">
     <groups>
     </groups>
-    <test started-at="2024-11-06T20:45:16 IST" name="Default test" finished-at="2024-11-06T20:46:19 IST" duration-ms="63164">
-      <class name="testpackg.Hometest">
-        <test-method is-config="true" signature="beftest()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:45:16 IST" name="beftest" finished-at="2024-11-06T20:45:18 IST" duration-ms="1610" status="PASS">
+    <test started-at="2024-11-08T17:48:53 IST" name="Default test" finished-at="2024-11-08T17:49:07 IST" duration-ms="13965">
+      <class name="testpackg.SearchboxTest">
+        <test-method is-config="true" signature="beftest()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-08T17:48:53 IST" name="beftest" finished-at="2024-11-08T17:48:55 IST" duration-ms="1777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beftest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:45:18 IST" name="setup" finished-at="2024-11-06T20:45:24 IST" duration-ms="6597" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-08T17:48:55 IST" name="setup" finished-at="2024-11-08T17:49:02 IST" duration-ms="6985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test1home()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:45:24 IST" name="test1home" finished-at="2024-11-06T20:46:18 IST" duration-ms="53293" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1home -->
-        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:46:18 IST" name="browserclose" finished-at="2024-11-06T20:46:18 IST" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=test1home status=SUCCESS method=Hometest.test1home()[pri:0, instance:testpackg.Hometest@2af004b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:46:18 IST" name="setup" finished-at="2024-11-06T20:46:19 IST" duration-ms="956" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test2home()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:46:19 IST" name="test2home" finished-at="2024-11-06T20:46:19 IST" duration-ms="42" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Test1hotel()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-08T17:49:02 IST" name="Test1hotel" finished-at="2024-11-08T17:49:06 IST" duration-ms="4661" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-header"]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button"}
-  (Session info: chrome=130.0.6723.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a05e443bfbc0c230a7d5129a541be73a, findElement {value=//*[@id="page-header"]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\MARIA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52797/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05e443bfbc0c230a7d5129a541be73a]]>
+              <![CDATA[expected [https://www.agoda.com/search?area=517119&checkIn=2024-12-24&los=1&rooms=1&adults=2&children=1&childages=4&locale=en-us&ckuid=2680bb04-44c3-4cb5-b386-abc81b9a6630&prid=0&currency=INR&correlationId=e7f83283-b4d9-4c6e-8641-86a7f7c796ca&analyticsSessionId=-4274646761998054754&pageTypeId=1&realLanguageId=1&languageId=1&origin=IN&stateCode=KL&cid=-1&userId=2680bb04-44c3-4cb5-b386-abc81b9a6630&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=27&currencyCode=INR&htmlLanguage=en-us&cultureInfoName=en-us&machineName=sg-pc-6g-acm-web-user-77cc6cc9c6-wrffk&trafficGroupId=4&trafficSubGroupId=4&aid=130243&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkOut=2024-12-25&priceCur=INR&textToSearch=Chinnakanal&productType=-1&travellerType=2&familyMode=off&durationType=dayuse&ds=TtlIUu9BBVhkGGVr] but found [https://www.agoda.com/search?guid=6cf04c0d-366c-4e71-b3fc-4301a6d43a9a&asq=u2qcKLxwzRU5NDuxJ0kOF3T91go8JoYYMxAgy8FkBH1BN0lGAtYH25sdXoy34qb9fUPZLOEw354g1Ms6Qu53uMvQBkviXe1vcfG4PhPv0IDMBnzSWCRmy8KPsuZelRbMd%2BYbVu0nitcgaq4HocuVY5cmycVsjBebBYLpR9yFiMTE7Vd6xFw5QeaFrDwx8l6mnIIutc3p1CH6n5pZ6mkKMg%3D%3D&area=503534&tick=638666903427&locale=en-us&ckuid=80b6bf1e-a93c-4744-a985-70c3dd357654&prid=0&currency=INR&correlationId=13c5e7f5-f3c7-4835-ac9d-76461b019362&analyticsSessionId=-8146146802596594124&pageTypeId=1&realLanguageId=1&languageId=1&origin=IN&stateCode=KL&cid=-1&userId=80b6bf1e-a93c-4744-a985-70c3dd357654&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=27&currencyCode=INR&htmlLanguage=en-us&cultureInfoName=en-us&machineName=sg-pc-6f-acm-web-user-64f9bb5c9-7sn2q&trafficGroupId=4&trafficSubGroupId=4&aid=130243&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-12-24&checkOut=2024-12-25&rooms=1&adults=2&children=1&childages=4&priceCur=INR&los=1&textToSearch=Kakkanad&productType=-1&travellerType=2&familyMode=off&city=12722&durationType=dayuse&ds=xYDAO7WOZ3kZtFqp]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="page-header"]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button"}
-  (Session info: chrome=130.0.6723.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.23.1', revision: '656257d8e9'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a05e443bfbc0c230a7d5129a541be73a, findElement {value=//*[@id="page-header"]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\MARIA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52797/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05e443bfbc0c230a7d5129a541be73a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-at pagepckg.Homepage.newtab1(Homepage.java:109)
-at testpackg.Hometest.test2home(Hometest.java:30)
+              <![CDATA[java.lang.AssertionError: expected [https://www.agoda.com/search?area=517119&checkIn=2024-12-24&los=1&rooms=1&adults=2&children=1&childages=4&locale=en-us&ckuid=2680bb04-44c3-4cb5-b386-abc81b9a6630&prid=0&currency=INR&correlationId=e7f83283-b4d9-4c6e-8641-86a7f7c796ca&analyticsSessionId=-4274646761998054754&pageTypeId=1&realLanguageId=1&languageId=1&origin=IN&stateCode=KL&cid=-1&userId=2680bb04-44c3-4cb5-b386-abc81b9a6630&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=27&currencyCode=INR&htmlLanguage=en-us&cultureInfoName=en-us&machineName=sg-pc-6g-acm-web-user-77cc6cc9c6-wrffk&trafficGroupId=4&trafficSubGroupId=4&aid=130243&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkOut=2024-12-25&priceCur=INR&textToSearch=Chinnakanal&productType=-1&travellerType=2&familyMode=off&durationType=dayuse&ds=TtlIUu9BBVhkGGVr] but found [https://www.agoda.com/search?guid=6cf04c0d-366c-4e71-b3fc-4301a6d43a9a&asq=u2qcKLxwzRU5NDuxJ0kOF3T91go8JoYYMxAgy8FkBH1BN0lGAtYH25sdXoy34qb9fUPZLOEw354g1Ms6Qu53uMvQBkviXe1vcfG4PhPv0IDMBnzSWCRmy8KPsuZelRbMd%2BYbVu0nitcgaq4HocuVY5cmycVsjBebBYLpR9yFiMTE7Vd6xFw5QeaFrDwx8l6mnIIutc3p1CH6n5pZ6mkKMg%3D%3D&area=503534&tick=638666903427&locale=en-us&ckuid=80b6bf1e-a93c-4744-a985-70c3dd357654&prid=0&currency=INR&correlationId=13c5e7f5-f3c7-4835-ac9d-76461b019362&analyticsSessionId=-8146146802596594124&pageTypeId=1&realLanguageId=1&languageId=1&origin=IN&stateCode=KL&cid=-1&userId=80b6bf1e-a93c-4744-a985-70c3dd357654&whitelabelid=1&loginLvl=0&storefrontId=3&currencyId=27&currencyCode=INR&htmlLanguage=en-us&cultureInfoName=en-us&machineName=sg-pc-6f-acm-web-user-64f9bb5c9-7sn2q&trafficGroupId=4&trafficSubGroupId=4&aid=130243&useFullPageLogin=true&cttp=4&isRealUser=true&mode=production&browserFamily=Chrome&cdnDomain=agoda.net&checkIn=2024-12-24&checkOut=2024-12-25&rooms=1&adults=2&children=1&childages=4&priceCur=INR&los=1&textToSearch=Kakkanad&productType=-1&travellerType=2&familyMode=off&city=12722&durationType=dayuse&ds=xYDAO7WOZ3kZtFqp]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at testpackg.SearchboxTest.Test1hotel(SearchboxTest.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -104,26 +57,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2home -->
-        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:46:19 IST" name="browserclose" finished-at="2024-11-06T20:46:19 IST" duration-ms="327" status="PASS">
+        </test-method> <!-- Test1hotel -->
+        <test-method is-config="true" signature="browserclose(org.testng.ITestResult)[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-08T17:49:06 IST" name="browserclose" finished-at="2024-11-08T17:49:06 IST" duration-ms="188" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2home status=FAILURE method=Hometest.test2home()[pri:0, instance:testpackg.Hometest@2af004b] output={null}]]]>
+                <![CDATA[[TestResult name=Test1hotel status=FAILURE method=SearchboxTest.Test1hotel()[pri:0, instance:testpackg.SearchboxTest@248e319b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testpackg.Hometest@2af004b]" started-at="2024-11-06T20:46:19 IST" name="teardown" finished-at="2024-11-06T20:46:19 IST" duration-ms="296" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testpackg.SearchboxTest@248e319b]" started-at="2024-11-08T17:49:06 IST" name="teardown" finished-at="2024-11-08T17:49:07 IST" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testpackg.Hometest -->
+      </class> <!-- testpackg.SearchboxTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

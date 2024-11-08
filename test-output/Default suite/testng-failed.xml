@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testpackg.Hometest">
+      <class name="testpackg.SearchboxTest">
         <methods>
-          <include name="setup"/>
           <include name="browserclose"/>
+          <include name="setup"/>
+          <include name="Test1hotel"/>
           <include name="beftest"/>
-          <include name="test2home"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- testpackg.Hometest -->
+      </class> <!-- testpackg.SearchboxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

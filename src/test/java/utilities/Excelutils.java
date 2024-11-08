@@ -11,7 +11,6 @@ public class Excelutils {
 
     {
         try
-
               {
 
         	// File f=new File(xl);
@@ -46,18 +45,15 @@ public class Excelutils {
               }
 
               public static int getRowCount (String xl, String Sheet)
-
-              {
-
-                  try
+                {  try
 
                        {
 
                 	//  File f=new File(xl);
               	FileInputStream fi=new FileInputStream(xl);
               		XSSFWorkbook wb=new XSSFWorkbook(fi); 
-
-                           return wb.getSheet(Sheet).getLastRowNum();
+                   
+              		return wb.getSheet(Sheet).getLastRowNum();
                               }
 
                               catch (Exception e)

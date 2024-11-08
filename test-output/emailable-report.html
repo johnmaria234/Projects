@@ -9,38 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">63,164</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,965</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testpackg.Hometest</td><td><a href="#m0">test2home</a></td><td rowspan="1">1730906179042</td><td rowspan="1">42</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testpackg.Hometest</td><td><a href="#m1">test1home</a></td><td rowspan="1">1730906124783</td><td rowspan="1">53293</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testpackg.SearchboxTest</td><td><a href="#m0">Test1hotel</a></td><td rowspan="1">1731068342038</td><td rowspan="1">4661</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testpackg.Hometest#test2home</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;page-header&quot;]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button&quot;}
-  (Session info: chrome=130.0.6723.92)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.23.1&apos;, revision: &apos;656257d8e9&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a05e443bfbc0c230a7d5129a541be73a, findElement {value=//*[@id=&quot;page-header&quot;]/section/div[1]/nav/div[2]/div[9]/div/div[1]/div/button, using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.92, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\MARIA-~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52797}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52797/devtoo..., se:cdpVersion: 130.0.6723.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a05e443bfbc0c230a7d5129a541be73a
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
-	at pagepckg.Homepage.newtab1(Homepage.java:109)
-	at testpackg.Hometest.test2home(Hometest.java:30)
+<h2>Default test</h2><h3 id="m0">testpackg.SearchboxTest#Test1hotel</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [https://www.agoda.com/search?area=517119&amp;checkIn=2024-12-24&amp;los=1&amp;rooms=1&amp;adults=2&amp;children=1&amp;childages=4&amp;locale=en-us&amp;ckuid=2680bb04-44c3-4cb5-b386-abc81b9a6630&amp;prid=0&amp;currency=INR&amp;correlationId=e7f83283-b4d9-4c6e-8641-86a7f7c796ca&amp;analyticsSessionId=-4274646761998054754&amp;pageTypeId=1&amp;realLanguageId=1&amp;languageId=1&amp;origin=IN&amp;stateCode=KL&amp;cid=-1&amp;userId=2680bb04-44c3-4cb5-b386-abc81b9a6630&amp;whitelabelid=1&amp;loginLvl=0&amp;storefrontId=3&amp;currencyId=27&amp;currencyCode=INR&amp;htmlLanguage=en-us&amp;cultureInfoName=en-us&amp;machineName=sg-pc-6g-acm-web-user-77cc6cc9c6-wrffk&amp;trafficGroupId=4&amp;trafficSubGroupId=4&amp;aid=130243&amp;useFullPageLogin=true&amp;cttp=4&amp;isRealUser=true&amp;mode=production&amp;browserFamily=Chrome&amp;cdnDomain=agoda.net&amp;checkOut=2024-12-25&amp;priceCur=INR&amp;textToSearch=Chinnakanal&amp;productType=-1&amp;travellerType=2&amp;familyMode=off&amp;durationType=dayuse&amp;ds=TtlIUu9BBVhkGGVr] but found [https://www.agoda.com/search?guid=6cf04c0d-366c-4e71-b3fc-4301a6d43a9a&amp;asq=u2qcKLxwzRU5NDuxJ0kOF3T91go8JoYYMxAgy8FkBH1BN0lGAtYH25sdXoy34qb9fUPZLOEw354g1Ms6Qu53uMvQBkviXe1vcfG4PhPv0IDMBnzSWCRmy8KPsuZelRbMd%2BYbVu0nitcgaq4HocuVY5cmycVsjBebBYLpR9yFiMTE7Vd6xFw5QeaFrDwx8l6mnIIutc3p1CH6n5pZ6mkKMg%3D%3D&amp;area=503534&amp;tick=638666903427&amp;locale=en-us&amp;ckuid=80b6bf1e-a93c-4744-a985-70c3dd357654&amp;prid=0&amp;currency=INR&amp;correlationId=13c5e7f5-f3c7-4835-ac9d-76461b019362&amp;analyticsSessionId=-8146146802596594124&amp;pageTypeId=1&amp;realLanguageId=1&amp;languageId=1&amp;origin=IN&amp;stateCode=KL&amp;cid=-1&amp;userId=80b6bf1e-a93c-4744-a985-70c3dd357654&amp;whitelabelid=1&amp;loginLvl=0&amp;storefrontId=3&amp;currencyId=27&amp;currencyCode=INR&amp;htmlLanguage=en-us&amp;cultureInfoName=en-us&amp;machineName=sg-pc-6f-acm-web-user-64f9bb5c9-7sn2q&amp;trafficGroupId=4&amp;trafficSubGroupId=4&amp;aid=130243&amp;useFullPageLogin=true&amp;cttp=4&amp;isRealUser=true&amp;mode=production&amp;browserFamily=Chrome&amp;cdnDomain=agoda.net&amp;checkIn=2024-12-24&amp;checkOut=2024-12-25&amp;rooms=1&amp;adults=2&amp;children=1&amp;childages=4&amp;priceCur=INR&amp;los=1&amp;textToSearch=Kakkanad&amp;productType=-1&amp;travellerType=2&amp;familyMode=off&amp;city=12722&amp;durationType=dayuse&amp;ds=xYDAO7WOZ3kZtFqp]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at testpackg.SearchboxTest.Test1hotel(SearchboxTest.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -68,6 +48,5 @@ Session ID: a05e443bfbc0c230a7d5129a541be73a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testpackg.Hometest#test1home</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
